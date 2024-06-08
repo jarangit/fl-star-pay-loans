@@ -17,7 +17,7 @@ const config: Config = {
         navy: "#191364",
         darkNavy: "#0e0a3f",
         yellow: "#f0dd2b",
-        yellowLight: "#fff887",
+        yellowLight: "#FFFED7",
         yellowSuperLight: "#fffded",
         gray: "#f8f8f8",
       },
