@@ -2,6 +2,7 @@ import React from 'react'
 import Column from '../elements/column'
 import Row from '../elements/row'
 import Image from 'next/image'
+import { FaArrowRightLong } from 'react-icons/fa6'
 
 type Props = {}
 
@@ -40,7 +41,7 @@ const GetYourLoan = (props: Props) => {
           <>
             {list.map((item, key) => (
               <div key={key}>
-                <Column className=' bg-white rounded-lg shadow-lg py-12 p-12 text-center items-center gap-4 max-w-[400px]'>
+                <Column className=' bg-white rounded-lg shadow-md py-12 p-12 text-center items-center gap-8 max-w-[400px]'>
                   <Image
                     src={item.image}
                     alt=''
@@ -54,6 +55,13 @@ const GetYourLoan = (props: Props) => {
             ))}
           </>
         </Row>
+
+        <button className='bg-[#FFF887] py-3 px-10 rounded-full font-semibold w-fit mx-auto'>
+          <Row className='gap-2'>
+            <div>Get your loan now </div>
+            <FaArrowRightLong />
+          </Row>
+        </button>
       </Column>
     </div>
   )
