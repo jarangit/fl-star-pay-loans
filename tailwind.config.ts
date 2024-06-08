@@ -19,7 +19,6 @@ const config: Config = {
         yellow: "#f0dd2b",
         yellowLight: "#FFFED7",
         yellowSuperLight: "#fffded",
-        gray: "#f8f8f8",
       },
     },
   },

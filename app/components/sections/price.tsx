@@ -8,7 +8,7 @@ type Props = {}
 const Price = (props: Props) => {
   return (
     <div className='bg-yellow'>
-      <div className='my-container !py-24 grid grid-cols-1 md:grid-cols-3 gap-6'>
+      <div className='my-container !py-24 grid grid-cols-1 md:grid-cols-3 gap-6 justify-center items-center'>
         {/* section-1 */}
         <Column className='items-center justify-center'>
           <div className='text-4xl font-bold'>Honest Rates, No Hidden Fees.
@@ -17,7 +17,7 @@ const Price = (props: Props) => {
         </Column>
 
         {/* section-2 */}
-        <Column className='p-6 border h-[450px] justify-between bg-yellowLight rounded-lg border-gray'>
+        <Column className='p-6  h-[450px] justify-between bg-yellowLight rounded-lg max-w-[400px] mx-auto w-full'>
           <Column className='gap-6'>
             <div className='text-4xl font-bold'>Small Loan</div>
             <Column gap={3}>
@@ -42,7 +42,7 @@ const Price = (props: Props) => {
           </Column>
         </Column>
         {/* section-2 */}
-        <Column className='p-6 border h-[450px] justify-between bg-yellowLight rounded-lg border-gray'>
+        <Column className='p-6 h-[450px] justify-between bg-yellowLight rounded-lg max-w-[400px] mx-auto w-full'>
           <Column className='gap-6'>
             <div className='text-4xl font-bold'>Large Loan            </div>
             <Column gap={3}>
