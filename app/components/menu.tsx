@@ -24,9 +24,9 @@ const menus = [
 ]
 const Menus = (props: Props) => {
   return (
-    <div className='my-container bg-yellowLight '>
-      <Row className='  items-center w-full justify-between
-     pt-4 '>
+    <div className=' bg-yellowLight '>
+      <Row className='  my-container items-center w-full justify-between
+     !py-4 '>
         <div>
           <Image
             src={'/images/logo.png'}
