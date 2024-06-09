@@ -38,7 +38,9 @@ const Price = (props: Props) => {
 
           <Column className='gap-6'>
             <div className='font-bold'> <span className='text-4xl font-bold'>$500</span> loan</div>
-            <button className='bg-darkNavy text-white p-3 rounded-lg'>Request A Loan</button>
+            <a href="/form-loan">
+              <button className='bg-darkNavy text-yellowLight p-3 rounded-lg font-bold'>Request A Loan</button>
+            </a>
           </Column>
         </Column>
         {/* section-2 */}
@@ -63,7 +65,9 @@ const Price = (props: Props) => {
 
           <Column className='gap-6'>
             <div className='font-bold'> <span className='text-4xl font-bold'>$1000</span> loan</div>
-            <button className='bg-darkNavy text-white p-3 rounded-lg'>Request A Loan</button>
+            <a href="/form-loan">
+              <button className='bg-darkNavy text-yellowLight p-3 rounded-lg font-bold'>Request A Loan</button>
+            </a>
           </Column>
         </Column>
       </div>

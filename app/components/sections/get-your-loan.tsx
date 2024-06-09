@@ -31,37 +31,36 @@ const list = [
 ]
 const GetYourLoan = (props: Props) => {
   return (
-    <div className='bg-yellowLight py-12'>
+    <div className='bg-yellowLight py-12 px-5'>
       <Column className='my-container gap-12'>
         <div className='font-bold text-4xl text-center'>
           Get your loan in <span className='text-yellow'>3 easy steps</span>
         </div>
         {/* list */}
-        <Row className='gap-6 flex-wrap justify-center'>
-          <>
-            {list.map((item, key) => (
-              <div key={key}>
-                <Column className=' bg-white rounded-lg shadow-md py-12 p-12 text-center items-center gap-8 max-w-[400px]'>
-                  <Image
-                    src={item.image}
-                    alt=''
-                    width={100}
-                    height={100}
-                  />
-                  <div className='font-bold text-2xl'>{item.title}</div>
-                  <div className='leading-loose'>{item.detail}</div>
-                </Column>
-              </div>
-            ))}
-          </>
-        </Row>
-
-        <button className='bg-[#FFF887] py-3 px-10 rounded-full font-semibold w-fit mx-auto'>
-          <Row className='gap-2'>
-            <div>Get your loan now </div>
-            <FaArrowRightLong />
-          </Row>
-        </button>
+        <div className='gap-6  grid grid-cols-1 md:grid-cols-3 justify-center'>
+          {list.map((item, key) => (
+            <div key={key}>
+              <Column className=' bg-white rounded-lg shadow-md h-full py-12 p-12 text-center items-center gap-8 md:max-w-[400px] mx-auto'>
+                <Image
+                  src={item.image}
+                  alt=''
+                  width={100}
+                  height={100}
+                />
+                <div className='font-bold text-2xl'>{item.title}</div>
+                <div className='leading-loose'>{item.detail}</div>
+              </Column>
+            </div>
+          ))}
+        </div>
+        <a href="/form-loan" className='mx-auto'>
+          <button className='bg-[#FFF887] py-3 px-10 rounded-full font-semibold w-fit '>
+            <Row className='gap-2'>
+              <div>Get your loan now </div>
+              <FaArrowRightLong />
+            </Row>
+          </button>
+        </a>
       </Column>
     </div>
   )

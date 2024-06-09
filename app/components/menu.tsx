@@ -1,6 +1,9 @@
+"use client"; // This is a client component 
+
 import React from 'react'
 import Row from './elements/row'
 import Image from 'next/image'
+import { useRouter } from 'next/dist/client/components/navigation';
 
 type Props = {}
 
@@ -23,11 +26,13 @@ const menus = [
   },
 ]
 const Menus = (props: Props) => {
+  const { push } = useRouter()
+
   return (
     <div className=' bg-yellowLight '>
       <Row className='  my-container items-center w-full justify-between
      !py-4 '>
-        <div>
+        <div onClick={() => push('/')} className='cursor-pointer'>
           <Image
             src={'/images/logo.png'}
             alt=''
@@ -36,16 +41,15 @@ const Menus = (props: Props) => {
           />
         </div>
         <div>
-          <Row gap={3} className='gap-8'>
-            <>
-              {menus.map((item, key) => (
-                <div key={key} className='font-medium cursor-pointer transition-all hover:opacity-50'>{item.title}</div>
-              ))}
-            </>
-
-            <button className='text-yellowLight font-bold bg-darkNavy p-2 rounded-full px-6'>
-              GET A LOAN
-            </button>
+          <Row gap={3} className='gap-8 hidden md:flex'>
+            {menus.map((item, key) => (
+              <div key={key} className='font-medium cursor-pointer transition-all hover:opacity-50'>{item.title}</div>
+            ))}
+            <a href="/form-loan">
+              <button onClick={() => push('/form-loan')} className='text-yellowLight font-bold bg-darkNavy p-2 rounded-full px-6'>
+                GET A LOAN
+              </button>
+            </a>
           </Row>
         </div>
       </Row>

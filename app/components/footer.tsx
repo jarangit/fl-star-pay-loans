@@ -1,26 +1,34 @@
+"use client"; // This is a client component 
+
 import Image from 'next/image'
 import React from 'react'
 import Column from './elements/column'
 import Row from './elements/row'
+import { useRouter } from "next/navigation";
 
 type Props = {}
 
 const Footer = (props: Props) => {
+  const { push } = useRouter()
   return (
     <div>
       <div className='my-container grid grid-cols-1 md:grid-cols-2 !py-12 items-center border-b border-gray gap-6'>
-        <Column className='gap-24'>
-          <Image
-            src={'/images/logo.png'}
-            alt=''
-            width={150}
-            height={150}
-          />
-          <button className='font-semibold p-3 px-6 rounded-lg bg-[#FFF887] w-fit'>Start Your Application</button>
+        <Column className='gap-24 cursor-pointer' >
+          <div onClick={() => push('/')}>
+            <Image
+              src={'/images/logo.png'}
+              alt=''
+              width={150}
+              height={150}
+            />
+          </div>
+          <a href="/form-loan">
+            <button className='font-semibold p-3 px-6 rounded-lg bg-[#FFF887] w-fit'>Start Your Application</button>
+          </a>
         </Column>
 
         {/* section-2 */}
-        <Row className='justify-between !items-start'>
+        <Row className='justify-between !items-start text-sm gap-3'>
           <Column>
             <div className='font-bold text-xl'>Contract</div>
             <div>info@starpayloans.ca</div>
@@ -43,7 +51,7 @@ const Footer = (props: Props) => {
       </div>
 
       {/* copy */}
-      <div className='py-6 text-center'>© 2024 Copyright <span className='font-bold'>Starpayloans</span></div>
+      <div className='py-6 text-center text-sm'>© 2024 Copyright <span className='font-bold'>Starpayloans</span></div>
     </div>
   )
 }

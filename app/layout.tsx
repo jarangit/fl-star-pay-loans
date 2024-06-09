@@ -11,6 +11,10 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "StarPay",
   description: "",
+  icons: {
+    icon: "/images/icon-web.png", // /public path,
+  },
+
 };
 
 export default function RootLayout({
