@@ -1,4 +1,4 @@
-import { content } from "./contents/text";
+import { websiteConfig } from "./websiteConfig";
 
 export default function cloudinaryLoader({
   src,
@@ -9,5 +9,5 @@ export default function cloudinaryLoader({
   width: number;
   quality?: number;
 }) {
-  return `${content.domain_image}/${src}`;
+  return `${websiteConfig.domain_image}/${src}`;
 }

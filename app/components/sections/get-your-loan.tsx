@@ -31,10 +31,10 @@ const list = [
 ]
 const GetYourLoan = (props: Props) => {
   return (
-    <div className='bg-yellowLight py-12 px-5'>
+    <div className='bg-main py-12 px-5'>
       <Column className='my-container gap-12'>
         <div className='font-bold text-4xl text-center'>
-          Get your loan in <span className='text-yellow'>3 easy steps</span>
+          Get your loan in <span className='text-secondary'>3 easy steps</span>
         </div>
         {/* list */}
         <div className='gap-6  grid grid-cols-1 md:grid-cols-3 justify-center'>
@@ -54,7 +54,7 @@ const GetYourLoan = (props: Props) => {
           ))}
         </div>
         <a href="/form-loan" className='mx-auto'>
-          <button className='bg-[#FFF887] py-3 px-10 rounded-full font-semibold w-fit '>
+          <button className='bg-secondary py-3 px-10 rounded-full font-semibold w-fit '>
             <Row className='gap-2'>
               <div>Get your loan now </div>
               <FaArrowRightLong />

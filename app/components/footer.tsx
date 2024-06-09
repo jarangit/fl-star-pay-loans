@@ -23,7 +23,7 @@ const Footer = (props: Props) => {
             />
           </div>
           <a href="/form-loan">
-            <button className='font-semibold p-3 px-6 rounded-lg bg-[#FFF887] w-fit'>Start Your Application</button>
+            <button className='font-semibold p-3 px-6 rounded-lg bg-secondary w-fit'>Start Your Application</button>
           </a>
         </Column>
 

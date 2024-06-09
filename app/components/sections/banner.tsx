@@ -16,7 +16,7 @@ const list = [
 
 const Banner = (props: Props) => {
   return (
-    <div className='bg-yellowLight pb-12'>
+    <div className='bg-main pb-12'>
       <div className='my-container grid grid-cols-1 md:grid-cols-2 p-3'>
         {/* col1 */}
         <Column className='justify-center gap-6'>
@@ -30,7 +30,7 @@ const Banner = (props: Props) => {
             ))}
           </Row>
           <a href="/form-loan" className=''>
-            <button className='bg-[#FFF887] py-3 px-10 rounded-full font-semibold w-fit'>Start My Application!</button>
+            <button className='bg-secondary py-3 px-10 rounded-full font-semibold w-fit'>Start My Application!</button>
           </a>
           <div>18+, Full Time Eployment Required</div>
         </Column>

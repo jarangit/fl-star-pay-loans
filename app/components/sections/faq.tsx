@@ -1,7 +1,7 @@
 import React from "react";
 import Column from "../elements/column";
 import AccordionItem from "../elements/accordion-item";
-import { content } from "@/contents/text";
+import { websiteConfig } from "@/websiteConfig";
 
 type Props = {};
 
@@ -11,11 +11,11 @@ const data = [
     content: `Short term loans are designed around addressing an immediate financial need or emergency. This could be an unexpected medical bill, a broken down car or an urgent boiler repair, etc. The loan amount range is usually up to $1,000 and the term can range from under 30 days for a payday style loan to monthly or weekly installments for an installment style loan`,
   },
   {
-    title: `How does ${content.domain} work?`,
+    title: `How does ${websiteConfig.domain} work?`,
     content: `We provide an online marketplace connecting borrowers with trusted lenders to support Americans in need. Our website makes the process of finding a lender to meet your needs faster and easier! Avoid wasting hours of your time applying individually on several websites, and simply apply by submitting your information to our vast network of lenders through one easy application`,
   },
   {
-    title: `Will ${content.domain} charge me for using its service?`,
+    title: `Will ${websiteConfig.domain} charge me for using its service?`,
     content: `There is no cost to fill out a form and submit your information through our website. As a marketplace, we simply connect you to a prospective lender and receive a commission. We do not receive any information that allows us to evaluate or compare offers from potential lenders. Please carefully review any offer you receive from a lender to make sure it meets your needs and you fully understand the terms before proceeding to take out a loan.`,
   },
   {
@@ -37,7 +37,7 @@ const data = [
 ];
 const FAQ = (props: Props) => {
   return (
-    <Column className="bg-yellowLight !py-24 gap-12">
+    <Column className="bg-main !py-24 gap-12">
       <Column className="items-center gap-6">
         <div >
           HAVE ANY QUESTIONS?

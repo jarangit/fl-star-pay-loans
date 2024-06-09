@@ -5,12 +5,12 @@ import Script from "next/script";
 import { GoogleTagManager } from "@next/third-parties/google";
 import Menus from "./components/menu";
 import Footer from "./components/footer";
+import { websiteConfig } from "@/websiteConfig";
 
-const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "StarPay",
-  description: "",
+  title: websiteConfig.title1,
+  description: websiteConfig.description,
   icons: {
     icon: "/images/icon-web.png", // /public path,
   },
@@ -43,8 +43,8 @@ export default function RootLayout({
         async={true}
         src="https://loansaccount.com/form/applicationInit.js"
       ></Script>
-      <body className={inter.className}>
-        <GoogleTagManager gtmId={'GTM-PTZ55Z7C'} />
+      <body className={'text-text'}>
+        <GoogleTagManager gtmId={websiteConfig.gtm} />
         <Menus />
         {children}
         <Footer />

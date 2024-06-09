@@ -29,7 +29,7 @@ const Menus = (props: Props) => {
   const { push } = useRouter()
 
   return (
-    <div className=' bg-yellowLight '>
+    <div className=' bg-main '>
       <Row className='  my-container items-center w-full justify-between
      !py-4 '>
         <div onClick={() => push('/')} className='cursor-pointer'>
@@ -46,7 +46,7 @@ const Menus = (props: Props) => {
               <div key={key} className='font-medium cursor-pointer transition-all hover:opacity-50'>{item.title}</div>
             ))}
             <a href="/form-loan">
-              <button onClick={() => push('/form-loan')} className='text-yellowLight font-bold bg-darkNavy p-2 rounded-full px-6'>
+              <button onClick={() => push('/form-loan')} className='text-white font-bold bg-text p-2 rounded-full px-6'>
                 GET A LOAN
               </button>
             </a>

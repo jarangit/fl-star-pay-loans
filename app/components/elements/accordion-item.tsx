@@ -18,9 +18,9 @@ const AccordionItem = ({ data, firstActive }: Props) => {
       className={` bg-white border rounded-xl p-4 px-6 shadow-sm border-gray-100  cursor-pointer   ${open ? "gap-2" : "gap-0"} transition-all duration-500`}
       onClick={() => setOpen(!open)}
     >
-      <Row className="flex justify-between hover:text-main">
+      <Row className="flex justify-between ">
         <div className="text-xl font-bold">{data.title}</div>
-        <div className="bg-[#FFF887] p-2 rounded-md">
+        <div className="bg-secondary p-2 rounded-md">
           {open ? <IoIosArrowDown size={25} /> : <IoIosArrowUp size={25} />}
         </div>
       </Row>

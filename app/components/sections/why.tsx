@@ -24,7 +24,7 @@ const Why = (props: Props) => {
     <div className=''>
       <Column className='my-container !py-24 gap-12'>
         <div className='font-bold text-4xl text-center'>
-          Why Canadians Choose <span className='text-yellow'>StarPayLoans
+          Why Canadians Choose <span className='text-secondary'>StarPayLoans
           </span>
         </div>
         <div className='border border-gray rounded-lg py-12 px-10 gap-6 shadow-lg grid grid-cols-1 md:grid-cols-4'>
