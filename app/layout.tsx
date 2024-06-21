@@ -41,7 +41,7 @@ export default function RootLayout({
       <Script
         type="text/javascript"
         async={true}
-        src="https://loansaccount.com/form/applicationInit.js"
+        src={`https://loansaccount.com/form/applicationInit.js?cacheControl=${new Date().getTime()}`}
       ></Script>
       <body className={'text-text'}>
         <GoogleTagManager gtmId={websiteConfig.gtm} />

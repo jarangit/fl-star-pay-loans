@@ -4,25 +4,26 @@ import React from 'react'
 import Row from './elements/row'
 import Image from 'next/image'
 import { useRouter } from 'next/dist/client/components/navigation';
+import Link from 'next/link';
 
 type Props = {}
 
 const menus = [
   {
     title: 'Home',
-    url: ''
+    url: '/'
   },
   {
     title: 'Why StarPay?',
-    url: ''
+    url: '/'
   },
   {
     title: 'Loan Examples',
-    url: ''
+    url: '/'
   },
   {
     title: 'FAQ',
-    url: ''
+    url: '/'
   },
 ]
 const Menus = (props: Props) => {
@@ -43,7 +44,7 @@ const Menus = (props: Props) => {
         <div>
           <Row gap={3} className='gap-8 hidden md:flex'>
             {menus.map((item, key) => (
-              <div key={key} className='font-medium cursor-pointer transition-all hover:opacity-50'>{item.title}</div>
+              <Link href={item.url} key={key} className='font-medium cursor-pointer transition-all hover:opacity-50'>{item.title}</Link>
             ))}
             <a href="/form-loan">
               <button onClick={() => push('/form-loan')} className='text-white font-bold bg-text p-2 rounded-full px-6'>

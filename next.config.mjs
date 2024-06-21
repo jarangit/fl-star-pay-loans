@@ -5,6 +5,7 @@ const nextConfig = {
   //   loader: 'custom',
   //   loaderFile: './my-loader.ts',
   // },
+
 }
 
 
